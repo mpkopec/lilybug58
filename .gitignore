@@ -1,2 +1,4 @@
 ergogen/*.FCBak
 ergogen/output*
+node_modules/
+.claude/
