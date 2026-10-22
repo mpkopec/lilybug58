@@ -1,5 +1,5 @@
 {
-  "name": "lilybug56-ergogen",
+  "name": "lilybug58-ergogen",
   "private": true,
   "scripts": {
     "generate": "ergogen ergogen -o ergogen/output --clean"

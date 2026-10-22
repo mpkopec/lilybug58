@@ -1,17 +1,39 @@
-# CLAUDE.md — lilybug56
+# CLAUDE.md — lilybug58
 
 Split keyboard that combines two existing designs. Bug54 provides the compact,
-portable, column-staggered base; this repo is a fork of ogruendel's Bug54.
-Lily58 provides the additions that Bug54 lacks. The first addition is the
-Lily58-style index-finger key. If the Lily58 thumb cluster differs from the
-Bug54 one, the Lily58 thumb cluster is the second addition; if the two
-clusters are the same or similar, the index-finger key is the only addition.
+portable, column-staggered base with 27 keys per half; this repo is a fork of
+ogruendel's Bug54. Two keys per half are added from Lily58, giving 29 keys per
+half and 58 in total, which the name reflects: the Lily58-style index-finger
+key, and a fifth key below the ring-finger column, where a Super key
+typically sits.
 
 ## Toolchain
 
-- PCB: KiCad. The two halves are separate projects, `kicad/lilybug56_left`
-  and `kicad/lilybug56_right`.
+- PCB: KiCad. The two halves are separate projects, `kicad/lilybug58_left`
+  and `kicad/lilybug58_right`.
 - Firmware: QMK.
+
+## Key naming and matrix
+
+Key names are physical: they state where a key sits, not how it is wired,
+and they are the same on both halves. The electrical matrix is defined
+separately in the schematic, so a key's name and its matrix position need
+not match.
+
+- Columns C1–C6 run from the outer edge to the inner edge next to the
+  microcontroller. In ergogen's names: C1 `far`, C2 `pinky`, C3 `ring`,
+  C4 `middle`, C5 `index`, C6 `inner`.
+- Rows R1–R4 run from the top (number) row to the bottom row.
+- C7 is the thumb cluster, with three keys.
+- `C6R3.5` is the added index-finger key. It sits beside C6 on the
+  microcontroller side, centred vertically between C6R3 and C6R4, in the
+  same position as the Lily58 extra key.
+- `C3R5` is the added Super-key position, directly below C3R4. Only C3 has
+  an R5.
+
+Each half uses a 5-row × 7-column matrix, 12 GPIO, of which 29 positions are
+populated. `C6R3.5` is the only key on matrix column 7; its matrix row, and
+the assignment of every other key, are decided in the schematic.
 
 ## Microcontroller
 
@@ -23,7 +45,7 @@ they already own; the set of boards is not yet decided.
 ## KiCad libraries
 
 Symbols missing from KiCad's official libraries go into the project-local
-library `kicad/lilybug56.kicad_sym`, registered in the project
+library `kicad/lilybug58.kicad_sym`, registered in the project
 `sym-lib-table` through `${KIPRJMOD}`, so that every clone resolves them
 without extra installation.
 
@@ -64,4 +86,4 @@ the layout is frozen.
 
 The Bug54 ZMK setup, README, BOM and photos are removed from the tree and
 remain in git history (`git log -- boards/` and so on). `mech/Case.FCStd` is
-Bug54's FreeCAD case, kept as the starting point for the lilybug56 case.
+Bug54's FreeCAD case, kept as the starting point for the lilybug58 case.

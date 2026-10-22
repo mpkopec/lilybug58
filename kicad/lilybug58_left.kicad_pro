@@ -447,6 +447,7 @@
       "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
+      "same_local_global_power": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
       "similar_power": "warning",
@@ -466,7 +467,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "lilybug56_left.kicad_pro",
+    "filename": "lilybug58_left.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -494,8 +495,8 @@
     "meta": {
       "version": 5
     },
-    "net_colors": null,
-    "netclass_assignments": null,
+    "net_colors": {},
+    "netclass_assignments": {},
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -633,8 +634,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "lilybug56_left.kicad_sch",
-        "name": "lilybug56_left",
+        "filename": "lilybug58_left.kicad_sch",
+        "name": "lilybug58_left",
         "uuid": "9c319c87-f18b-4ac6-bd59-39ba32020555"
       }
     ],
@@ -644,7 +645,7 @@
   "sheets": [
     [
       "9c319c87-f18b-4ac6-bd59-39ba32020555",
-      "lilybug56_left"
+      "lilybug58_left"
     ]
   ],
   "text_variables": {},
