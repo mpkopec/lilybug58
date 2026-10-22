@@ -6,13 +6,13 @@
 <style type="text/css">
 	.st0{fill:none;stroke:#8C8C8C;stroke-width:0.7087;stroke-linecap:round;}
 	.st1{fill:#FFFFFF;}
-	.st2{font-family:'CourierNewPS-BoldMT';}
+	.st2{font-family:'CourierNewPS-BoldMT','Courier New','Liberation Mono',Cousine,'Nimbus Mono PS','Noto Sans Mono','DejaVu Sans Mono',monospace;font-weight:bold;}
 	.st3{font-size:6px;}
 	.st4{fill:#920000;}
 	.st5{fill:#004949;}
 	.st6{fill:#E6E6E6;stroke:#737373;stroke-width:0.3543;}
 	.st7{fill:#FFFF6D;}
-	.st8{font-family:'CourierNewPSMT';}
+	.st8{font-family:'CourierNewPSMT','Courier New','Liberation Mono',Cousine,'Nimbus Mono PS','Noto Sans Mono','DejaVu Sans Mono',monospace;}
 	.st9{fill:#24FF24;}
 	.st10{fill:#B6DBFF;}
 	.st11{fill:#B66DFF;}
@@ -62,7 +62,7 @@
 	.st55{fill:#D2D2D4;}
 	.st56{fill:#808184;}
 	.st57{opacity:0.8;}
-	.st58{font-family:'DroidSansMono';}
+	.st58{font-family:'DroidSansMono','Droid Sans Mono','Noto Sans Mono','Liberation Mono','DejaVu Sans Mono',monospace;}
 	.st59{font-size:24px;}
 	.st60{font-size:10px;}
 </style>

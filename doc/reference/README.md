@@ -17,8 +17,16 @@ the key matrix, and to write the pin map of the QMK keyboard definition.
   at commit `ea88166891ee0a1697a3899a5d55ab3722a2f125`.
 - Pinned download link:
   <https://raw.githubusercontent.com/adafruit/Adafruit-Feather-RP2040-PCB/ea88166891ee0a1697a3899a5d55ab3722a2f125/Adafruit%20Feather%20RP2040%20pinout.svg>
-- Changes: the file was renamed so that the name contains no spaces. Its
-  content is unmodified.
+- Changes: the file was renamed so that the name contains no spaces.
+  Additionally, the three `font-family` rules (`.st2`, `.st8`, `.st58`) were
+  extended with fallback fonts. The original rules name only PostScript
+  fonts (`CourierNewPSMT`, `CourierNewPS-BoldMT`, `DroidSansMono`), which
+  most browsers do not match, so the labels fell back to the default serif
+  font. Every fallback has an advance width of 0.600–0.602 em, the same as
+  Courier New, so that each label still fits its fixed background
+  rectangle. The bold rule also received `font-weight:bold`, because the
+  bold weight was previously carried only by the PostScript name. The rest
+  of the content is unmodified.
 - Licence: Creative Commons Attribution-ShareAlike. The upstream README does
   not state the licence version, and the `license.txt` it refers to is not
   present in the upstream repository.
