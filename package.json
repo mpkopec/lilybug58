@@ -1,0 +1,10 @@
+{
+  "name": "lilybug56-ergogen",
+  "private": true,
+  "scripts": {
+    "generate": "ergogen ergogen -o ergogen/output --clean"
+  },
+  "devDependencies": {
+    "ergogen": "4.2.1"
+  }
+}
