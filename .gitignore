@@ -1,9 +1,11 @@
 mech/*.FCBak
 ergogen/output*
 node_modules/
+.venv/
 .claude/
 kicad/.history/
 kicad/*-backups/
 kicad/fp-info-cache
 kicad/*.kicad_prl
 kicad/~*.lck
+*.bak

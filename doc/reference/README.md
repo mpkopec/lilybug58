@@ -53,3 +53,26 @@ It is reproduced below verbatim, apart from the product photograph it embeds.
 > Designed by Adafruit Industries.
 > Creative Commons Attribution, Share-Alike license, check license.txt for more information
 > All text above must be included in any redistribution
+
+## RP-008371-DS-1-rp2040-datasheet.pdf
+
+The file is Raspberry Pi's datasheet of the RP2040 microcontroller, which
+the Adafruit Feather RP2040 carries. It is used to choose the electrical
+types of the pins and pin alternates of the project's Feather RP2040
+symbol. For example, §2.19.4 (Pads) and §4.3.1.3 (I2C IOs) describe how
+the I2C function drives a pad, and §4.4 (SPI) describes how the SPI TX pin
+drives its pad. The decisions that rely on it are recorded in
+`kicad/Adafruit_Feather_RP2040_review.md`.
+
+- Source: the RP2040 datasheet published by Raspberry Pi Ltd at
+  <https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf>. That
+  link serves the latest build, which can differ from the copy here. The
+  copy here is therefore identified by its colophon, which gives
+  `build-date: 2025-02-20` and
+  `build-version: 3184e62-clean`, and by its SHA-256 checksum
+  `be56fbb75ba0ae9e26558a73c93ac3e75c2ad4e6878d3b6703de2a76d886ea8c`.
+- Changes: none. The content is unmodified, as the licence requires.
+- Licence: Creative Commons Attribution-NoDerivatives 4.0 International
+  (CC BY-ND 4.0), © 2020–2025 Raspberry Pi Ltd, as stated in the
+  datasheet's colophon. Portions of the text are © Synopsys, Inc. and © Arm
+  Limited and are used with their permission, as the colophon also states.
